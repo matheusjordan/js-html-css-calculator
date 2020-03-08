@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora</h2>
+        
+        <div class="calculator" #principal>
+            <form name="form">
+                <table>
+                    <div>
+                        <input type="text" name="textarea">
+                    </div>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="button" value="CE" onclick="removeAll()">
+                        </td>
+                        <td>
+                            <input type="button" value="<-" onclick="remove()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="7" onclick="add(7)">
+                        </td>
+                        <td>
+                            <input type="button" value="8" onclick="add(8)">
+                        </td>
+                        <td>
+                            <input type="button" value="9" onclick="add(9)">
+                        </td>
+                        <td>
+                            <input type="button" value="+" onclick="add('+')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="4" onclick="add(4)">
+                        </td>
+                        <td>
+                            <input type="button" value="5" onclick="add(5)">
+                        </td>
+                        <td>
+                            <input type="button" value="6" onclick="add(6)">
+                        </td>
+                        <td>
+                            <input type="button" value="-" onclick="add('-')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="1" onclick="add(1)">
+                        </td>
+                        <td>
+                            <input type="button" value="2" onclick="add(2)">
+                        </td>
+                        <td>
+                            <input type="button" value="3" onclick="add(3)">
+                        </td>
+                        <td>
+                            <input type="button" value="*" onclick="add('*')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="0" onclick="add(0)">
+                        </td>
+                        <td>
+                            <input type="button" value="=" onclick="calc()">
+                        </td>
+                        <td>
+                            <input type="button" value="/" onclick="add('/')">
+                        </td>
+                    </tr>
+                </table>    
+            </form>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
